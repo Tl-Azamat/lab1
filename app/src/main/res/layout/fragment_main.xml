@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_intent"
+        android:layout_width="wrap_content"
+
+
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main"
+        android:text="Intents and Deep Linking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main"
+
+        android:text="Foreground Service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_intent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_broadcast"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Broadcast Receiver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/main"
+
+        app:layout_constraintTop_toBottomOf="@+id/btn_service" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main"
+        android:text="Content Provider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_broadcast" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.lab1.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_foregroundServiceFragment"
+            app:destination="@id/foregroundServiceFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_intentsFragment"
+            app:destination="@id/intentsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_broadcastReceiverFragment"
+            app:destination="@id/broadcastReceiverFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_contentProviderFragment"
+            app:destination="@id/contentProviderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foregroundServiceFragment"
+        android:name="com.example.lab1.ForegroundServiceFragment"
+        android:label="ForegroundServiceFragment" />
+    <fragment
+        android:id="@+id/intentsFragment"
+        android:name="com.example.lab1.IntentsFragment"
+        android:label="IntentsFragment" />
+    <fragment
+        android:id="@+id/broadcastReceiverFragment"
+        android:name="com.example.lab1.BroadcastReceiverFragment"
+        android:label="BroadcastReceiverFragment" />
+    <fragment
+        android:id="@+id/contentProviderFragment"
+        android:name="com.example.lab1.ContentProviderFragment"
+        android:label="ContentProviderFragment" />
+</navigation>
